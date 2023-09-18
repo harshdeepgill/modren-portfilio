@@ -1,0 +1,51 @@
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    z-index: 1;
+
+
+    .inner{
+        display: flex;
+
+    }
+    .social{
+        width: 15%;
+        justify-content: center;
+        gap: 20px;
+    }
+    .links{
+        width: 40%;
+        justify-content: space-between;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            p{
+                margin-bottom:3px;
+                cursor: pointer;
+            }
+        }
+
+        .line{
+            width: 8px;
+            height: 2px;
+            
+            z-index: 2;
+        }
+        .active{
+            background-color: orangered;
+        }
+    }
+    .initials{
+        width: 15%;
+        justify-content: center;
+    }
+}
