@@ -5,9 +5,8 @@ const Home = () => {
   return (
     <div>
         <Title name="hello"/>
-        <h1>I'm </h1>
-        <h1>Harshdeep <span>Gill</span></h1>
         <h1>A Full Stack Web Developer</h1>
+        <h3>Harshdeep <span>Gill</span></h3>
         <image />
     </div>
   )
