@@ -1,0 +1,71 @@
+.main-home{
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .outer-home{
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .animated-div{
+        height: 300px;
+        width: 300px;
+        background-image: url("https://firebasestorage.googleapis.com/v0/b/harshdeep-gill-portfolio-websi.appspot.com/o/Resources%2FProfile%20Pic%20Harsh.jpg?alt=media&token=6773fe23-76d1-4715-bb44-d79883fe7918");
+        background-position: center;
+        background-size: cover;
+        border: 3px solid orangered;
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        animation: animate 5s ease-in-out infinite;
+    }
+
+    .text-home{
+        max-width: 400px;
+        font-family: "Roboto", sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+
+        .logo-home{
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(8,1fr);
+            gap: 3.5%;
+            justify-content: space-between;
+            align-items: center;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        h1{
+            margin: 0;
+            font-size: 3rem;
+            span{
+                color: orangered;
+            }
+        }
+
+        p{
+            margin: 0;
+            font-family: "Raleway", sans-serif;
+            // font-weight: 300;
+        }
+    }
+    @keyframes animate{
+        0%{
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        }
+        50%{
+            border-radius: 30% 60% 70% 40% / 40% 50% 30% 70%;
+        }
+        100%{
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        }
+    }
+}

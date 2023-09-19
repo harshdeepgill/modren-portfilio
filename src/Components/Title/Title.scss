@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     gap: 7px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 200;
     font-size: 1rem;
 
@@ -10,5 +10,9 @@
         width: 13px;
         height: 1.5px;
         background-color: whitesmoke;
+
+    }
+    p{
+        margin: 0;
     }
 }
