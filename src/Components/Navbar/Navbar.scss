@@ -1,11 +1,13 @@
 .main{
+    background-color: #020a13;
     display: flex;
     align-items: center;
     justify-content: space-around;
     position: absolute;
     bottom: 0;
     width: 100vw;
-    z-index: 1;
+    z-index: 3;
+    padding: 10px 0;
 
 
     .inner{
@@ -29,6 +31,7 @@
             align-items: center;
 
             p{
+                margin: 0;
                 margin-bottom:3px;
                 cursor: pointer;
             }
@@ -47,5 +50,8 @@
     .initials{
         width: 15%;
         justify-content: center;
+        h1{
+            margin: 0;
+        }
     }
 }

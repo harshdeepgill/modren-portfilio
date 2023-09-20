@@ -2,13 +2,28 @@
     width: 100vw;
     height: 85vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
+
+    .bg-text-home{
+        position: absolute;
+        bottom: 10vh;
+        left: 0px;
+        z-index: -2;
+        h1{
+            margin: 0;
+            font-family: 'Abril Fatface', cursive;
+            font-size: 6rem;
+            color: #0b131a;
+        }
+    }
     .outer-home{
+        width: 65%;
         display: flex;
         justify-content: center;
-        gap: 40px;
+        gap: 70px;
     }
 
     .animated-div{
@@ -17,31 +32,22 @@
         background-image: url("https://firebasestorage.googleapis.com/v0/b/harshdeep-gill-portfolio-websi.appspot.com/o/Resources%2FProfile%20Pic%20Harsh.jpg?alt=media&token=6773fe23-76d1-4715-bb44-d79883fe7918");
         background-position: center;
         background-size: cover;
-        border: 3px solid orangered;
+        border: 1px solid white;
         border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
         animation: animate 5s ease-in-out infinite;
+
     }
 
     .text-home{
-        max-width: 400px;
+        // max-width: 400px;
         font-family: "Roboto", sans-serif;
+        // color: rgba(113, 113, 113, 0.07);
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 10px;
 
-        .logo-home{
-            margin-top: 20px;
-            display: grid;
-            grid-template-columns: repeat(8,1fr);
-            gap: 3.5%;
-            justify-content: space-between;
-            align-items: center;
-
-            img{
-                width: 100%;
-            }
-        }
+        
 
         h1{
             margin: 0;

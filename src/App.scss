@@ -2,19 +2,51 @@
     width: 100vw;
     height: 100vh ;
     // border: 2px solid red;
-    background-color: black;
+    // opacity: 0.1;
+    // z-index: -5;
+    // position: fixed;
+    // // content: "";
+    
+    top: 0px;
+    // opacity: 0.1;
+    transform: translateZ(0px);
+    // background-color: black;
+    
     color: white;
     overflow: hidden;
+
+    .bg-image{
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        z-index: -2;
+        background-image: url("https://firebasestorage.googleapis.com/v0/b/harshdeep-gill-portfolio-websi.appspot.com/o/Resources%2FUntitled%20design.png?alt=media&token=880b04e3-4d14-4bbd-837f-0ad75d5d0935");
+        background-position: center;
+        background-size: cover;
+    }
+
+    .bg-effect{
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        // border: 2px solid red;
+        background-image: radial-gradient(at 40% 40%, rgb(30, 144, 255) 0px, transparent 50%), radial-gradient(at 90% 10%, rgb(255, 105, 180) 0px, transparent 50%), radial-gradient(at 50% 95%, rgb(0, 255, 255) 0px, transparent 50%), radial-gradient(at 20% 30%, rgb(50, 205, 50) 0px, transparent 50%), radial-gradient(at 90% 90%, rgb(255, 255, 0) 0px, transparent 50%), radial-gradient(at 33% 50%, rgb(255, 69, 0) 0px, transparent 50%), radial-gradient(at 79% 53%, rgb(128, 0, 128) 0px, transparent 50%);
+        opacity: 0.1;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        filter: blur(100px) saturate(100%);
+    }
 
     #slider{
         display: flex;
         overflow-x: auto;
         scroll-behavior: smooth;
         
-    }
-    .wrapper{
-        min-width: 100vw;
-        height: 100vh;
-        // border: 2px solid blue;
+        .wrapper{
+            min-width: 100vw;
+            height: 100vh;
+            // border: 2px solid blue;
+        }
     }
 }
